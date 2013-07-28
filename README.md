@@ -4,9 +4,11 @@ visual_bookmarks
 Alternative bookmark manager for ownCloud.
 Displays bookmark data visually as coloured flags and has a searchable index to lookup bookmarks by title, description or content type.
 
+This app is in a pre-alpha stage and should not be considered stable or feature complete.
+
 _Note: this app requires the installation of the ownCloud AppFramework - see step 1_
 
-####Visually displays your bookmarks
+####Visually display your bookmarks
 ![screenshot from 2013-07-28 09 30 02](https://f.cloud.github.com/assets/774663/867631/a26d7bfa-f716-11e2-92f0-db094f877573.png)
 
 ####Edit inline and add searchable descriptions
@@ -17,9 +19,9 @@ _Note: this app requires the installation of the ownCloud AppFramework - see ste
 
 ##Installation
 
-1. Clone or upload ownCloud appframework (https://github.com/owncloud/appframework) into your apps folder and enable
-2. Clone or upload visual_bookmarks (https://github.com/owncloud/appframework) into your apps folder and enable.
+1. Clone or upload ownCloud [appframework](https://github.com/owncloud/appframework) into your apps folder and enable
+2. Clone or upload [visual_bookmarks](https://github.com/owncloud/appframework) into your apps folder and enable.
 
 ##Maintainer:
 
-- [Daniel Givney] (https://github.com/dgivney)
+- [Daniel Givney](https://github.com/dgivney)
