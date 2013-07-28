@@ -22,6 +22,14 @@ _Note: this app requires the installation of the ownCloud AppFramework - see ste
 1. Clone or upload ownCloud [appframework](https://github.com/owncloud/appframework) into your apps folder and enable
 2. Clone or upload [visual_bookmarks](https://github.com/owncloud/appframework) into your apps folder and enable.
 
+##Feature Roadmap
+
+This is the roadmap of features that are currently being worked on and will appear in future versions of visual_bookmarks.
+
+- Extend the indexer to save an image for contentType image/* bookmarks or text/html bookmarks that have an image in the metadata and display that on top of the link area.
+- Extend the indexer to store a copy of contentType text/html sites and make it searchable by the lucene module.
+- Provide a solution to sync bookmarks between various browsers on all common devices.
+
 ##Maintainer:
 
 - [Daniel Givney](https://github.com/dgivney)
