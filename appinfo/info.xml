@@ -10,8 +10,5 @@
     <licence>AGPL</licence>
     <author>Daniel Givney (https://github.com/dgivney)</author>
     <require>5</require>
-    <types>
-        <type>filesystem</type>
-    </types>
-    <shipped>false</shipped>
+    <shipped>true</shipped>
 </info>
