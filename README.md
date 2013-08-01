@@ -6,7 +6,7 @@ Displays bookmark data visually as coloured flags and has a searchable index to 
 
 This app is in a pre-alpha stage and should not be considered stable or feature complete.
 
-_Note: this app requires the installation of the ownCloud AppFramework - see step 1_
+_Note: this app requires the installation of the ownCloud [appframework](https://github.com/owncloud/appframework) - see step 1_
 
 ####Visually display your bookmarks
 ![screenshot from 2013-07-28 09 30 02](https://f.cloud.github.com/assets/774663/867631/a26d7bfa-f716-11e2-92f0-db094f877573.png)
@@ -20,7 +20,7 @@ _Note: this app requires the installation of the ownCloud AppFramework - see ste
 ##Installation
 
 1. Clone or upload ownCloud [appframework](https://github.com/owncloud/appframework) into your apps folder and enable
-2. Clone or upload [visual_bookmarks](https://github.com/owncloud/appframework) into your apps folder and enable.
+2. Clone or upload [visual_bookmarks](https://github.com/DGivney/visual_bookmarks) into your apps folder and enable.
 
 ##Feature Roadmap
 
