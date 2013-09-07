@@ -67,6 +67,7 @@ class PageController extends Controller
             $data = $this->params('data');
             $bookmark->set($data['Bookmark'], array('title', 'url', 'description'));
             $bookmark->setUserId($this->api->getUserId());
+            $bookmark->setAdded(strtotime('now'));
 
             if ($bookmark = $this->bookmarkMapper->insert($bookmark) !== false) {
                 $flash = array(
@@ -96,6 +97,7 @@ class PageController extends Controller
         if($this->request->method === 'POST') {
             $data = $this->params('data');
             $bookmark->set($data['Bookmark'], array('title', 'url', 'description'));
+            $bookmark->setLastmodified(strtotime('now'));
 
             if ($bookmark && $this->bookmarkMapper->update($bookmark) !== false) {
                 $flash = array(
@@ -182,6 +184,8 @@ class PageController extends Controller
                     $bookmark->setUrl($url);
                     $bookmark->setUserId($this->api->getUserId());
                     $bookmark->setTitle($link->nodeValue);
+                    $bookmark->setAdded(strtotime('now'));
+                    $bookmark->setLastmodified(strtotime('now'));
 
                     if($link->hasAttribute("description")) {
                         $bookmark->setDescription($link->getAttribute("description"));
