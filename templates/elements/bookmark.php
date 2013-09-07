@@ -1,7 +1,7 @@
 {% if bookmark %}
 <a class="bookmark" href="{{url('visual_bookmarks_redirect', {id: bookmark.id})}}"
     target="_blank" title="{{bookmark.title|escape}}"
-    data-content-type="{{bookmark.type|escape}}"
+    data-content-type="all|{{bookmark.type|escape}}"
     data-resource="{{bookmark.title|escape}}|{{bookmark.hostname|escape}}"
     data-description="{{bookmark.description|escape}}"
     data-refresh-url="{{url('visual_bookmarks_view', {id: bookmark.id})}}"
