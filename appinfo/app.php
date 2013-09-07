@@ -11,6 +11,6 @@ if (\OCP\App::isEnabled('appframework')) {
       'icon' => $api->imagePath('bookmarks.png'),
       'name' => $api->getTrans()->t('Bookmarks')
     ));
-    $api->addRegularTask('\Lib\Indexer', 'indexAll');
+    $api->addRegularTask('\OCA\Visual_Bookmarks\Lib\Indexer', 'indexAll');
 
 }
