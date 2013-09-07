@@ -12,14 +12,15 @@ class Bookmark extends Entity
     public $id;
     public $url;
     public $title;
+    public $image;
+    public $type;
     public $userId;
     public $description;
     public $public;
     public $added;
     public $lastmodified;
-    public $clickcount;
-    public $image;
     public $lastindexed;
+    public $clickcount;
 
     /**
      * Additional fields
