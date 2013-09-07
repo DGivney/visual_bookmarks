@@ -31,7 +31,8 @@ class PageController extends Controller
      * index method
      *
      * @CSRFExemption
-     * @brief renders the index page
+     * @IsAdminExemption
+     * @IsSubAdminExemption
      * @return an instance of a Response implementation
      */
     public function index()
@@ -44,7 +45,8 @@ class PageController extends Controller
     /**
      * view method
      *
-     * @brief renders the index page
+     * @IsAdminExemption
+     * @IsSubAdminExemption
      * @return an instance of a Response implementation
      */
     public function view()
@@ -57,7 +59,8 @@ class PageController extends Controller
     /**
      * add method
      *
-     * @CSRFExemption
+     * @IsAdminExemption
+     * @IsSubAdminExemption
      * @return an instance of a Response implementation
      */
     public function add()
@@ -68,6 +71,7 @@ class PageController extends Controller
             $bookmark->set($data['Bookmark'], array('title', 'url', 'description'));
             $bookmark->setUserId($this->api->getUserId());
             $bookmark->setAdded(strtotime('now'));
+            $bookmark->setLastmodified(strtotime('now'));
 
             if ($bookmark = $this->bookmarkMapper->insert($bookmark) !== false) {
                 $flash = array(
@@ -88,6 +92,8 @@ class PageController extends Controller
     /**
      * edit method
      *
+     * @IsAdminExemption
+     * @IsSubAdminExemption
      * @return an instance of a Response implementation
      */
     public function edit()
@@ -118,6 +124,8 @@ class PageController extends Controller
     /**
      * delete method
      *
+     * @IsAdminExemption
+     * @IsSubAdminExemption
      * @return an instance of a Response implementation
      */
     public function delete()
@@ -148,6 +156,8 @@ class PageController extends Controller
      * redirect method
      *
      * @CSRFExemption
+     * @IsAdminExemption
+     * @IsSubAdminExemption
      * @return an instance of a Response implementation
      */
     public function redirect()
@@ -162,6 +172,8 @@ class PageController extends Controller
      * import method
      *
      * @CSRFExemption
+     * @IsAdminExemption
+     * @IsSubAdminExemption
      * @return an instance of a Response implementation
      */
     public function import()
@@ -212,6 +224,8 @@ class PageController extends Controller
      * export method
      *
      * @CSRFExemption
+     * @IsAdminExemption
+     * @IsSubAdminExemption
      * @return an instance of a Response implementation
      */
     public function export()
