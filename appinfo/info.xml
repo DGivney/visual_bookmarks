@@ -6,7 +6,7 @@
         Alternative bookmark manager for ownCloud. Displays bookmark data visually as coloured flags and has a searchable index to lookup bookmarks by title, description or content type. For a roadmap of features see the github project.
         NOTE: Requires appframework (https://github.com/owncloud/appframework) to be installed and enabled under your /apps folder.
     </description>
-    <version>0.1.2</version>
+    <version>0.1.3</version>
     <licence>AGPL</licence>
     <author>Daniel Givney (https://github.com/dgivney)</author>
     <require>5</require>
